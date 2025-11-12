@@ -2,7 +2,7 @@ name: Build
 'on':
   push:
     branches:
-    - master
+    - build-experiment
     paths-ignore:
     - '**/*.md'
   pull_request:
@@ -12,7 +12,7 @@ name: Build
     - '**/*.md'
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: experiment-latest
     env:
       BUILDNOTE_API_KEY: ${{ secrets.BUILDNOTE_API_KEY }}
       BUILDNOTE_GITHUB_JOB_NAME: build
