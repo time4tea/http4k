@@ -12,7 +12,7 @@ name: Build
     - '**/*.md'
 jobs:
   build:
-    runs-on: experiment-latest
+    runs-on: time4tea-4c-ubuntu-latest
     env:
       BUILDNOTE_API_KEY: ${{ secrets.BUILDNOTE_API_KEY }}
       BUILDNOTE_GITHUB_JOB_NAME: build
