@@ -13,7 +13,10 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
+    maven {
+        url=uri("http://10.42.32.1:6081/maven2")
+    }
+//    mavenCentral()
     mavenLocal()
 }
 
