@@ -14,8 +14,7 @@ plugins {
 
 repositories {
     maven {
-        url=uri("http://10.42.32.1:6081/maven2")
-        isAllowInsecureProtocol = true
+        url=uri("https://mavencentral.cache.time4tea.net/maven2")
     }
 //    mavenCentral()
     mavenLocal()
