@@ -3,13 +3,13 @@ rootProject.name = "http4k"
 pluginManagement {
     repositories {
         maven {
-            url=uri("https://gradle-plugins.cache.time4tea.net/m2")
+            url=uri("https://gradle-plugins.cache.act-fast.com/m2")
         }
         maven {
-            url=uri("https://mavencentral.cache.time4tea.net/maven2")
+            url=uri("https://mavencentral.cache.act-fast.com/maven2")
         }
-        gradlePluginPortal()
-        mavenCentral()
+//        gradlePluginPortal()
+//        mavenCentral()
         mavenLocal()
     }
     includeBuild("gradle/gradle-plugins")
