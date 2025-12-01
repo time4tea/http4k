@@ -14,7 +14,7 @@ plugins {
 
 repositories {
     maven {
-        url=uri("https://mavencentral.cache.act-fast.com/maven2")
+        url=uri("https://maven-central.cache.act-fast.com/maven2")
     }
 //    mavenCentral()
     mavenLocal()

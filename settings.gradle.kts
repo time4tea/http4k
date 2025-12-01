@@ -6,7 +6,7 @@ pluginManagement {
             url=uri("https://gradle-plugins.cache.act-fast.com/m2")
         }
         maven {
-            url=uri("https://mavencentral.cache.act-fast.com/maven2")
+            url=uri("https://maven-central.cache.act-fast.com/maven2")
         }
 //        gradlePluginPortal()
 //        mavenCentral()
