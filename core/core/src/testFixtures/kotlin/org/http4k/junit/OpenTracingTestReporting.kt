@@ -25,8 +25,10 @@ class OpenTracingTestReporting : TestExecutionListener {
         val honeycombApiKey = System.getenv("HONEYCOMB_API_KEY")
 
         if (honeycombApiKey == null) {
+            println("*** NOT Starting Honeycomb Listener")
             openTelemetry = null
         } else {
+            println("*** Starting Honeycomb Listener key is '${honeycombApiKey}'")
             val resource = Resource.getDefault()
                 .merge(Resource.create(Attributes.of(AttributeKey.stringKey("service.name"), "test-main")))
 
